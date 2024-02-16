@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" spacing="30.0"
+      stylesheets="@../../css/app.css" xmlns="http://javafx.com/javafx/11.0.14-internal"
+      xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.cinema.controller.CrudScreeningController">
+    <children>
+        <HBox styleClass="custom_input">
+            <children>
+                <Label text="Phim"/>
+                <JFXComboBox fx:id="cbMovie" styleClass="custom_tf"/>
+            </children>
+        </HBox>
+        <HBox styleClass="custom_input">
+            <children>
+                <Label text="Phòng"/>
+                <JFXComboBox fx:id="cbAuditorium" prefWidth="150.0" styleClass="custom_tf"/>
+            </children>
+        </HBox>
+        <HBox styleClass="custom_input">
+            <children>
+                <Label text="Ngày chiếu"/>
+                <JFXDatePicker fx:id="dpDate" prefHeight="200.0" prefWidth="200.0" styleClass="custom_tf"/>
+            </children>
+        </HBox>
+        <HBox styleClass="custom_input">
+            <children>
+                <Label text="Giờ chiếu"/>
+                <JFXTimePicker fx:id="tpTime" prefHeight="200.0" prefWidth="200.0" styleClass="custom_tf"/>
+            </children>
+        </HBox>
+        <HBox styleClass="custom_input">
+            <children>
+                <Label text="Giá vé"/>
+                <JFXTextField fx:id="tfPrice" styleClass="custom_tf"/>
+            </children>
+        </HBox>
+        <AnchorPane>
+            <children>
+                <JFXButton mnemonicParsing="false" fx:id="btnDelete"
+                           style="-fx-background-color: red;" styleClass="custom_btn" text="Xóa"
+                           AnchorPane.leftAnchor="0" visible="false"/>
+                <JFXButton mnemonicParsing="false" styleClass="custom_btn"
+                           text="Thêm" AnchorPane.rightAnchor="0" fx:id="btnSave"/>
+            </children>
+        </AnchorPane>
+    </children>
+    <padding>
+        <Insets bottom="30.0" left="30.0" right="30.0" top="30.0"/>
+    </padding>
+</VBox>

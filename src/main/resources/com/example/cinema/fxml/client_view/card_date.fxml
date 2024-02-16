@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<HBox alignment="CENTER" fillHeight="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+      minWidth="-Infinity" prefHeight="50.0" prefWidth="67.0" spacing="5.0" styleClass="card_date"
+      stylesheets="@../../css/app.css" xmlns="http://javafx.com/javafx/11.0.14-internal"
+      xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.cinema.controller.CardDateController"
+fx:id="parent">
+    <children>
+        <VBox alignment="CENTER_LEFT" fillWidth="false" spacing="5.0">
+            <children>
+                <Label fx:id="lbMonth" text="10"/>
+                <Label fx:id="lbNameDay" text="Sun"/>
+            </children>
+        </VBox>
+        <Label fx:id="lbDay" text="29">
+            <font>
+                <Font size="30.0"/>
+            </font>
+        </Label>
+    </children>
+</HBox>

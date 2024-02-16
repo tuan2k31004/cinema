@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<StackPane xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1"
+           fx:controller="com.example.cinema.controller.AppController" stylesheets="@../css/app.css">
+    <BorderPane prefHeight="650.0" prefWidth="1000.0">
+        <top>
+            <VBox prefHeight="50.0" prefWidth="900.0" styleClass="main_header" BorderPane.alignment="CENTER">
+                <AnchorPane prefHeight="50.0" prefWidth="1000.0" styleClass="main_header">
+                    <JFXHamburger fx:id="hamburger" layoutX="14.0" layoutY="15.0"/>
+                    <Label fx:id="lbTitle" layoutX="53.0" layoutY="10.0"/>
+                </AnchorPane>
+            </VBox>
+        </top>
+        <center>
+            <StackPane>
+                <Pane fx:id="pBody"/>
+                <Pane fx:id="pMenu" visible="false">
+                    <JFXDrawer fx:id="drawer" defaultDrawerSize="180">
+                        <sidePane>
+                            <fx:include source="menu.fxml"/>
+                        </sidePane>
+                    </JFXDrawer>
+                </Pane>
+            </StackPane>
+        </center>
+    </BorderPane>
+</StackPane>

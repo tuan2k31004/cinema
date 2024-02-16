@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import de.jensd.fx.glyphs.fontawesome.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox styleClass="menu_container" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="com.example.cinema.controller.ClientMenuController">
+    <children>
+        <JFXButton text="Phim" fx:id="btnMovie">
+            <graphic>
+                <FontAwesomeIconView glyphName="TV" />
+            </graphic>
+        </JFXButton>
+        <JFXButton text="Lịch sử"  fx:id="btnHistory">
+            <graphic>
+                <FontAwesomeIconView glyphName="HISTORY"/>
+            </graphic>
+        </JFXButton>
+    </children>
+</VBox>

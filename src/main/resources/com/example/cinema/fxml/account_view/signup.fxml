@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.layout.*?>
+
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<BorderPane prefHeight="300.0" prefWidth="300.0" xmlns="http://javafx.com/javafx/11.0.14-internal"
+            xmlns:fx="http://javafx.com/fxml/1" stylesheets="@../../css/account.css"
+            fx:controller="com.example.cinema.controller.SignupController">
+    <center>
+        <VBox alignment="CENTER" fillWidth="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+              minWidth="-Infinity" prefHeight="260.0" prefWidth="300.0" spacing="40">
+            <children>
+                <JFXTextField labelFloat="true" promptText="Tài khoản" styleClass="text_field" fx:id="tfUsername"/>
+                <JFXTextField labelFloat="true" promptText="Mật khẩu" styleClass="text_field" fx:id="tfPassword"/>
+                <JFXButton styleClass="btn_login_signup" text="Đăng ký" onMouseClicked="#register"/>
+            </children>
+        </VBox>
+    </center>
+    <top>
+        <AnchorPane prefHeight="40.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+            <children>
+                <FontAwesomeIconView AnchorPane.leftAnchor="10" AnchorPane.topAnchor="10" glyphName="ARROW_LEFT"
+                                     size="20" onMouseClicked="#back"/>
+            </children>
+        </AnchorPane>
+    </top>
+</BorderPane>

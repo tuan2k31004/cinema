@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import de.jensd.fx.glyphs.fontawesome.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import org.controlsfx.control.*?>
+
+<StackPane prefHeight="550.0" prefWidth="700.0" style="-fx-background-color: #ffffff"
+           stylesheets="@../../css/app.css" xmlns="http://javafx.com/javafx/11.0.14-internal"
+           xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.cinema.controller.CrudMovieController">
+    <children>
+        <HBox prefHeight="100.0" prefWidth="200.0">
+            <children>
+                <VBox prefHeight="500.0" prefWidth="450.0" spacing="30">
+                    <padding>
+                        <Insets bottom="30.0" left="20.0" right="20.0" top="30.0"/>
+                    </padding>
+                    <children>
+                        <HBox styleClass="custom_input">
+                            <children>
+                                <Label text="Tên phim"/>
+                                <JFXTextField fx:id="tfNameMovie" styleClass="custom_tf"/>
+                            </children>
+                        </HBox>
+                        <HBox styleClass="custom_input">
+                            <children>
+                                <Label text="Đạo diễn"/>
+                                <JFXTextField fx:id="tfDirector" styleClass="custom_tf"/>
+                            </children>
+                        </HBox>
+                        <HBox styleClass="custom_input">
+                            <children>
+                                <Label text="Thời lượng"/>
+                                <JFXTextField fx:id="tfDuration" styleClass="custom_tf"/>
+                            </children>
+                        </HBox>
+                        <HBox styleClass="custom_input">
+                            <children>
+                                <Label text="Thể loại"/>
+                                <AnchorPane>
+                                    <children>
+                                        <CheckComboBox fx:id="cbGenres"/>
+                                        <Label fx:id="lbErrorGenres" style="-fx-text-fill: red;-fx-font-size: 12"
+                                               text="" AnchorPane.bottomAnchor="-22" AnchorPane.leftAnchor="10"/>
+                                    </children>
+                                </AnchorPane>
+                            </children>
+                        </HBox>
+                        <HBox styleClass="custom_input">
+                            <children>
+                                <Label text="Doanh thu"/>
+                                <JFXTextField fx:id="tfRevenue" editable="false" style="-fx-cursor: DEFAULT"
+                                              styleClass="custom_tf" text="0"/>
+                            </children>
+                        </HBox>
+                        <HBox styleClass="custom_input">
+                            <children>
+                                <Label text="Mô tả"/>
+                                <JFXTextArea fx:id="taDescription" style="-fx-pref-height: 150;-fx-padding: 10"
+                                             styleClass="custom_tf"/>
+                            </children>
+                        </HBox>
+                    </children>
+                </VBox>
+                <VBox alignment="CENTER" prefHeight="500.0" prefWidth="346.0" spacing="50">
+                    <children>
+                        <AnchorPane prefWidth="258.0">
+                            <children>
+                                <FontAwesomeIconView glyphName="CLOSE" onMouseClicked="#close" size="20"
+                                                     AnchorPane.rightAnchor="0"/>
+                            </children>
+                        </AnchorPane>
+                        <VBox alignment="CENTER" fillWidth="false" prefHeight="442.0" prefWidth="258.0" spacing="10.0">
+                            <children>
+                                <Pane prefHeight="260.0" prefWidth="182.0" style="-fx-border-color: black">
+                                    <children>
+                                        <ImageView fx:id="imgThumbnail" fitHeight="260.0" fitWidth="182.0"
+                                                   pickOnBounds="true"/>
+                                    </children>
+                                </Pane>
+                                <JFXTextField fx:id="tfThumbnail" prefHeight="30.0" prefWidth="274.0" promptText="URL"/>
+                            </children>
+                        </VBox>
+                        <HBox alignment="CENTER" spacing="90">
+                            <children>
+                                <JFXButton fx:id="btnDelete" mnemonicParsing="false" onMouseClicked="#deleteMovie"
+                                           style="-fx-background-color: red" styleClass="custom_btn" text="Xóa"
+                                           visible="false"/>
+                                <JFXButton mnemonicParsing="false" onMouseClicked="#saveMovie" styleClass="custom_btn"
+                                           text="Lưu"/>
+                            </children>
+                        </HBox>
+                    </children>
+                    <padding>
+                        <Insets bottom="30.0" left="20.0" right="20.0" top="30.0"/>
+                    </padding>
+                </VBox>
+            </children>
+        </HBox>
+    </children>
+</StackPane>

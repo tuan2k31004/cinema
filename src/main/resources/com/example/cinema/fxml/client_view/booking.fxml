@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+
+
+<StackPane xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1"
+           fx:controller="com.example.cinema.controller.BookingController" fx:id="root">
+    <children>
+        <HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0"
+              prefWidth="900.0" style="-fx-background-color: #ffffff" stylesheets="@../../css/app.css">
+            <children>
+                <StackPane prefHeight="500.0" prefWidth="597.0">
+                    <children>
+                        <VBox alignment="CENTER" fillWidth="false" spacing="30.0" style="-fx-background-color: #ffffff">
+                            <children>
+                                <FlowPane fx:id="listSeat" hgap="5" nodeOrientation="RIGHT_TO_LEFT" prefHeight="91.0"
+                                          prefWidth="524.0" vgap="5">
+
+                                </FlowPane>
+                                <HBox alignment="CENTER" prefWidth="600.0" spacing="100.0">
+                                    <children>
+                                        <Label text="Đã đặt">
+                                            <graphic>
+                                                <JFXButton mnemonicParsing="false"
+                                                           style="-fx-pref-height: 10; -fx-pref-width: 20; -fx-background-color: rgb(128,128,128); -fx-padding: 0;"
+                                                           text=""/>
+                                            </graphic>
+                                        </Label>
+                                        <Label text="Đã chọn">
+                                            <graphic>
+                                                <JFXButton mnemonicParsing="false"
+                                                           style="-fx-pref-height: 10; -fx-pref-width: 20; -fx-background-color: red; -fx-padding: 0;"
+                                                           text=""/>
+                                            </graphic>
+                                        </Label>
+                                    </children>
+                                </HBox>
+                            </children>
+                        </VBox>
+                        <ScrollPane fx:id="listFood" hbarPolicy="NEVER" vbarPolicy="NEVER" visible="false">
+                            <content>
+                                <FlowPane hgap="30" prefWidth="600.0" style="-fx-background-color: #ffffff" vgap="20">
+                                    <padding>
+                                        <Insets bottom="30.0" left="30.0" right="30.0" top="30.0"/>
+                                    </padding>
+                                </FlowPane>
+                            </content>
+                        </ScrollPane>
+                    </children>
+                </StackPane>
+                <Separator orientation="VERTICAL" prefHeight="200.0"/>
+                <VBox>
+                    <children>
+                        <VBox alignment="TOP_CENTER" prefHeight="500.0" prefWidth="300.0" spacing="5.0">
+                            <children>
+                                <ImageView fx:id="imgThumbnail" fitHeight="200.0" fitWidth="140.0" pickOnBounds="true"
+                                           preserveRatio="true">
+                                </ImageView>
+                                <HBox fillHeight="false">
+                                    <children>
+                                        <Label styleClass="lb" text="Phim:"/>
+                                        <Label fx:id="lbNameMovie" prefWidth="209.0" wrapText="true"/>
+                                    </children>
+                                </HBox>
+                                <HBox fillHeight="false">
+                                    <children>
+                                        <Label styleClass="lb" text="Phòng:"/>
+                                        <Label fx:id="lbAuditorium"/>
+                                    </children>
+                                </HBox>
+                                <HBox fillHeight="false">
+                                    <children>
+                                        <Label styleClass="lb" text="Suất chiếu:"/>
+                                        <Label fx:id="lbTime"/>
+                                    </children>
+                                </HBox>
+                                <HBox fillHeight="false">
+                                    <children>
+                                        <Label styleClass="lb" text="Ghế:"/>
+                                        <Label fx:id="lbSeats" wrapText="true"/>
+                                    </children>
+                                </HBox>
+                                <Separator prefWidth="200.0"/>
+                                <HBox fillHeight="false">
+                                    <children>
+                                        <Label styleClass="lb" text="Tổng:"/>
+                                        <Label fx:id="lbTotal" text="0"/>
+                                    </children>
+                                </HBox>
+                                <HBox fillHeight="false">
+                                    <children>
+                                        <Label styleClass="lb" text="Đồ ăn:"/>
+                                        <Label fx:id="lbFood" text="0"/>
+                                    </children>
+                                </HBox>
+                                <Separator prefWidth="200.0"/>
+                                <HBox fillHeight="false">
+                                    <children>
+                                        <Label styleClass="lb" text="Thành tiền:"/>
+                                        <Label fx:id="lbPayment" text="0"/>
+                                    </children>
+                                </HBox>
+                            </children>
+                        </VBox>
+                        <AnchorPane prefHeight="91.0" prefWidth="278.0">
+                            <children>
+                                <JFXButton fx:id="btnPrev" mnemonicParsing="false" styleClass="custom_btn" text="Trước"
+                                           visible="false" AnchorPane.bottomAnchor="0" AnchorPane.leftAnchor="0"/>
+                                <JFXButton fx:id="btnContinue" mnemonicParsing="false" styleClass="custom_btn"
+                                           text="Tiếp tục" AnchorPane.bottomAnchor="0" AnchorPane.rightAnchor="0"/>
+                                <JFXButton fx:id="btnOK" mnemonicParsing="false" styleClass="custom_btn" text="OK"
+                                           visible="false" AnchorPane.bottomAnchor="0" AnchorPane.rightAnchor="0"/>
+                            </children>
+                        </AnchorPane>
+                    </children>
+                    <padding>
+                        <Insets bottom="20.0" left="10.0" right="10.0" top="20.0"/>
+                    </padding>
+                </VBox>
+            </children>
+        </HBox>
+    </children>
+</StackPane>

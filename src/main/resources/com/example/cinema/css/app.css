@@ -1,0 +1,130 @@
+.main_header {
+    -fx-background-color: rgb(102, 102, 255);
+}
+
+.main_header Label {
+    -fx-text-fill: #ffffff;
+    -fx-font-size: 20;
+    -fx-font-weight: bold;
+    -fx-graphic-text-gap: 10;
+}
+
+JFXHamburger StackPane {
+    -fx-background-color: #ffffff;
+}
+
+.custom_input {
+    -fx-spacing: 10;
+    -fx-alignment: center_left;
+    -fx-font-size: 14;
+}
+
+.custom_input > Label {
+    -fx-font-weight: bold;
+    -fx-pref-width: 80;
+    -fx-pref-height: 25;
+}
+
+.custom_tf, .combo-box {
+    -fx-pref-width: 250;
+    -fx-pref-height: 40;
+    -fx-background-radius: 10;
+    -fx-background-color: #dddddd;
+    -fx-padding: 0 10;
+    -fx-focus-traversable: false;
+}
+
+.combo-box {
+    -fx-padding: 0;
+}
+
+.custom_tf .error-label {
+    -fx-text-fill: red;
+    -fx-font-size: 12;
+}
+
+.custom_tf .input-line {
+    -fx-pref-height: 0;
+}
+
+.custom_tf .input-focused-line {
+    -fx-pref-height: 0;
+}
+
+.custom_btn {
+    -fx-pref-width: 80;
+    -fx-pref-height: 30;
+    -fx-text-fill: #ffffff;
+    -fx-background-radius: 5;
+    -fx-background-color: blue;
+    -fx-focus-traversable: false;
+}
+
+.custom_btn FontAwesomeIconView {
+    -fx-fill: #ffffff;
+    -fx-font-size: 20;
+}
+
+.jfx-tree-table-view .tree-table-row-cell:filled {
+    -fx-border-color: rgba(128, 128, 128, 0.1);
+    -fx-border-width: 1 0 1 0;
+}
+
+.tree-table-cell {
+    -fx-alignment: center;
+}
+
+.jfx-tree-table-view {
+    -fx-border-color: rgba(128, 128, 128, 0.1);
+}
+
+.card_date:hover {
+    -fx-border-color: black;
+    -fx-border-radius: 5;
+}
+
+.card_time {
+    -fx-text-fill: black;
+    -fx-font-size: 14;
+    -fx-font-weight: bold;
+    -fx-pref-height: 20;
+    -fx-pref-width: 100;
+    -fx-border-color: rgb(128, 128, 128);
+    -fx-border-width: 0.5;
+}
+
+.card_time:hover {
+    -fx-border-color: black;
+    -fx-border-width: 1;
+}
+
+.lb {
+    -fx-pref-width: 80;
+    -fx-font-weight: bold;
+}
+
+.seat {
+    -fx-border-color: green;
+    -fx-pref-width: 30;
+    -fx-padding: 0;
+}
+
+.seat:selected {
+    -fx-border-color: red;
+    -fx-background-color: red;
+    -fx-text-fill: #ffffff;
+}
+
+.seat:disabled {
+    -fx-background-color: rgb(128, 128, 128);
+    -fx-text-fill: #ffffff;
+}
+
+.item_history {
+    -fx-padding: 5;
+    -fx-background-color: white;
+}
+
+.item_history:hover {
+    -fx-background-color: rgb(234, 231, 231);
+}

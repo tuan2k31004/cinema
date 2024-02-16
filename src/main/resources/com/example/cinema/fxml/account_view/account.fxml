@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0"
+            prefWidth="680.0" styleClass="account_container" stylesheets="@../../css/account.css"
+            xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="com.example.cinema.controller.AccountController">
+    <left>
+        <StackPane fx:id="slideshow" prefHeight="400.0" prefWidth="280.0" BorderPane.alignment="CENTER"/>
+    </left>
+    <center>
+        <Pane prefHeight="200.0" prefWidth="200.0" styleClass="center_account_container" BorderPane.alignment="CENTER">
+            <children>
+                <StackPane fx:id="body" layoutX="50.0" layoutY="50.0" prefHeight="300.0" prefWidth="300.0"/>
+            </children>
+        </Pane>
+    </center>
+
+</BorderPane>

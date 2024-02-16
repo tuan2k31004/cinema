@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="300.0"
+            prefWidth="300.0" stylesheets="@../../css/account.css" xmlns="http://javafx.com/javafx/11.0.14-internal"
+            xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.cinema.controller.LoginController">
+    <center>
+        <VBox alignment="CENTER" fillWidth="false" prefHeight="141.0" prefWidth="300.0" spacing="30"
+              BorderPane.alignment="CENTER">
+            <children>
+                <AnchorPane prefWidth="200.0">
+                    <children>
+                        <JFXComboBox prefHeight="26.0" prefWidth="116.0" fx:id="cbRole"/>
+                    </children>
+                </AnchorPane>
+                <JFXTextField fx:id="tfUsername" labelFloat="true" promptText="Tài khoản" styleClass="text_field"/>
+                <JFXPasswordField fx:id="tfPassword" labelFloat="true" promptText="Mật khẩu" styleClass="text_field"/>
+                <JFXButton onMouseClicked="#login" styleClass="btn_login_signup" text="Đăng nhập"/>
+            </children>
+        </VBox>
+    </center>
+    <top>
+        <StackPane prefHeight="50.0" prefWidth="300.0" BorderPane.alignment="CENTER">
+            <children>
+                <Label text="WELCOME BACK" textFill="#2215df">
+                    <font>
+                        <Font name="System Bold" size="20.0"/>
+                    </font>
+                </Label>
+            </children>
+        </StackPane>
+    </top>
+    <bottom>
+        <HBox alignment="CENTER" prefHeight="40.0" prefWidth="300.0">
+            <children>
+                <Label text="Bạn chưa có tài khoản?"/>
+                <Hyperlink onMouseClicked="#signup" text="Đăng ký"/>
+            </children>
+        </HBox>
+    </bottom>
+</BorderPane>

@@ -1,0 +1,23 @@
+
+.account_container {
+    -fx-background-color: #eeeeee;
+}
+
+.center_account_container > StackPane {
+    -fx-background-color: #ffffff;
+    -fx-background-radius: 10;
+    -fx-effect: dropshadow(three-pass-box,#DDDDDD,7,0,0,8);
+}
+
+.text_field{
+    -fx-pref-width: 200;
+    -fx-pref-height: 30;
+    -fx-focus-traversable: false;
+}
+.btn_login_signup{
+    -fx-background-color: blue;
+    -fx-text-fill: #ffffff;
+    -fx-background-radius: 5;
+    -fx-pref-width: 100;
+    -fx-pref-height: 30;
+}

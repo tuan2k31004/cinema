@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import de.jensd.fx.glyphs.fontawesome.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox prefWidth="180.0" stylesheets="@../../css/menu.css" xmlns="http://javafx.com/javafx/11.0.14-internal"
+      xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.cinema.controller.AdminMenuController">
+    <children>
+        <JFXButton fx:id="btnMovie" text="Phim">
+            <graphic>
+                <FontAwesomeIconView glyphName="FILM" wrappingWidth="12.0"/>
+            </graphic>
+        </JFXButton>
+        <JFXButton fx:id="btnAuditorium" text="Phòng chiếu">
+            <graphic>
+                <FontAwesomeIconView glyphName="VIDEO_CAMERA"/>
+            </graphic>
+        </JFXButton>
+        <JFXButton fx:id="btnScreening" text="Lịch chiếu">
+            <graphic>
+                <FontAwesomeIconView glyphName="CLOCK_ALT"/>
+            </graphic>
+        </JFXButton>
+        <JFXButton fx:id="btnFood" text="Đồ ăn">
+            <graphic>
+                <FontAwesomeIconView glyphName="CUTLERY"/>
+            </graphic>
+        </JFXButton>
+    </children>
+</VBox>

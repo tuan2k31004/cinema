@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<StackPane prefHeight="600.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/11.0.14-internal"
+           xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.cinema.controller.HistoryController">
+    <children>
+        <HBox>
+            <children>
+                <VBox fillWidth="false" prefHeight="600.0" prefWidth="500.0" spacing="20.0" style="-fx-padding: 5;">
+                    <children>
+                        <TilePane>
+                            <children>
+                                <Label text="Phim sắp xem">
+                                    <font>
+                                        <Font name="System Bold" size="18.0"/>
+                                    </font>
+                                </Label>
+                            </children>
+                        </TilePane>
+                        <ScrollPane hbarPolicy="NEVER" style="-fx-background-color: transparent;" vbarPolicy="NEVER">
+                            <content>
+                                <VBox spacing="20" fx:id="listMovieUpcoming">
+
+                                </VBox>
+                            </content>
+                        </ScrollPane>
+                    </children>
+                </VBox>
+                <Separator orientation="VERTICAL" prefHeight="200.0"/>
+                <VBox fillWidth="false" prefHeight="600.0" prefWidth="500.0" spacing="20.0" style="-fx-padding: 5;">
+                    <children>
+                        <TilePane>
+                            <children>
+                                <Label text="Phim đã xem">
+                                    <font>
+                                        <Font name="System Bold" size="18.0"/>
+                                    </font>
+                                </Label>
+                            </children>
+                        </TilePane>
+                        <ScrollPane hbarPolicy="NEVER" vbarPolicy="NEVER" style="-fx-background-color: transparent;">
+                            <content>
+                                <VBox spacing="20" fx:id="listMovieWatched">
+
+                                </VBox>
+                            </content>
+                        </ScrollPane>
+                    </children>
+                </VBox>
+            </children>
+        </HBox>
+    </children>
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0"/>
+    </padding>
+</StackPane>

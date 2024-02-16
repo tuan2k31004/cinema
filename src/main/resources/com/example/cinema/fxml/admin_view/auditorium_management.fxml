@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<StackPane prefHeight="600.0" prefWidth="1000.0" stylesheets="@../../css/app.css" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.cinema.controller.AuditoriumManagementController">
+    <children>
+        <HBox prefHeight="100.0" prefWidth="200.0">
+            <children>
+                <VBox alignment="TOP_LEFT" prefHeight="600.0" prefWidth="503.0" spacing="30.0">
+                    <children>
+                        <HBox styleClass="custom_input">
+                            <children>
+                                <Label text="Tên phòng" />
+                                <JFXTextField fx:id="tfName" styleClass="custom_tf" />
+                            </children>
+                        </HBox>
+                        <HBox styleClass="custom_input">
+                            <children>
+                                <Label text="Loại phòng" />
+                                <JFXComboBox fx:id="cbType" prefWidth="150.0" styleClass="custom_tf" />
+                            </children>
+                        </HBox>
+                        <AnchorPane>
+                            <children>
+                                <JFXButton fx:id="btnSave" mnemonicParsing="false" onMouseClicked="#addAuditorium" styleClass="custom_btn" text="Thêm" AnchorPane.rightAnchor="50" />
+                            </children>
+                        </AnchorPane>
+                    </children>
+                    <HBox.margin>
+                        <Insets />
+                    </HBox.margin>
+                    <padding>
+                        <Insets bottom="50.0" left="30.0" right="30.0" top="50.0" />
+                    </padding>
+                </VBox>
+                <Separator orientation="VERTICAL" prefHeight="600.0" prefWidth="0.0" />
+                <VBox prefHeight="600.0" prefWidth="598.0">
+                    <padding>
+                        <Insets bottom="30.0" left="30.0" right="30.0" top="30.0" />
+                    </padding>
+                    <children>
+                        <JFXTreeTableView fx:id="tbAuditorium" prefHeight="573.0" prefWidth="484.0">
+                            <columns>
+                                <JFXTreeTableColumn fx:id="colName" prefWidth="284.00000619888306" text="Tên" />
+                                <JFXTreeTableColumn fx:id="colType" prefWidth="120.0" text="Loại phòng" />
+                                <JFXTreeTableColumn fx:id="colDelete" prefWidth="73.5999755859375" />
+                            </columns>
+                        </JFXTreeTableView>
+                    </children>
+                </VBox>
+            </children>
+        </HBox>
+    </children>
+</StackPane>

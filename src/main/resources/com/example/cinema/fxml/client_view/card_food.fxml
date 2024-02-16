@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<HBox maxHeight="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="200.0" prefWidth="250.0"
+      xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="com.example.cinema.controller.CardFoodController">
+    <children>
+        <ImageView fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true" fx:id="imgThumbnail">
+
+        </ImageView>
+        <VBox prefWidth="150.0" spacing="5.0">
+            <children>
+                <Label text="PEANUTS SINGLE COMBO 2023" wrapText="true" fx:id="lbNameFood">
+                    <font>
+                        <Font name="System Bold" size="14.0"/>
+                    </font>
+                </Label>
+                <Label text="1 Bắp Lớn + 2 Nước Siêu Lớn + 1 Snack (tùy chọn snack: thanh ngũ cốc, cơm cháy hoặc bánh que)."
+                       wrapText="true" fx:id="lbDescription"/>
+                <HBox spacing="10.0">
+                    <children>
+                        <Label text="Giá:"/>
+                        <Label text="199,000 đồng" fx:id="lbPrice">
+                            <font>
+                                <Font name="System Bold" size="12.0"/>
+                            </font>
+                        </Label>
+                    </children>
+                </HBox>
+                <HBox spacing="5.0">
+                    <children>
+                        <JFXButton mnemonicParsing="false" prefHeight="25.0" prefWidth="25.0"
+                                   style="-fx-background-color: red; -fx-text-fill: #ffffff" text="-"
+                                   onMouseClicked="#decrease"/>
+                        <Label alignment="CENTER" prefHeight="25.0" prefWidth="25.0" text="0" fx:id="lbQuantity">
+                            <font>
+                                <Font name="System Bold" size="14.0"/>
+                            </font>
+                        </Label>
+                        <JFXButton mnemonicParsing="false" prefHeight="25.0" prefWidth="25.0"
+                                   style="-fx-background-color: red; -fx-text-fill: #ffffff" text="+"
+                                   onMouseClicked="#increase"/>
+                    </children>
+                </HBox>
+            </children>
+        </VBox>
+    </children>
+</HBox>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import de.jensd.fx.glyphs.fontawesome.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.layout.*?>
+
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0"
+           prefWidth="1000.0" xmlns="http://javafx.com/javafx/11.0.14-internal"
+           xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.cinema.controller.MovieManagementController">
+    <children>
+        <VBox spacing="50">
+            <children>
+                <HBox alignment="CENTER_LEFT" spacing="20">
+                    <children>
+                        <JFXTextField fx:id="tfSearch" focusTraversable="false" prefHeight="26.0" prefWidth="206.0"
+                                      promptText="Tìm kiếm phim"/>
+                        <JFXButton graphicTextGap="10.0" onMouseClicked="#addMovie" text="Thêm" styleClass="custom_btn">
+                            <graphic>
+                                <FontAwesomeIconView glyphName="PLUS"/>
+                            </graphic>
+                        </JFXButton>
+                    </children>
+                </HBox>
+                <JFXTreeTableView fx:id="tbMovie" prefHeight="480.0" prefWidth="840.0">
+                    <columns>
+                        <JFXTreeTableColumn fx:id="colName" prefWidth="351.40000569820404" text="Tên phim"/>
+                        <JFXTreeTableColumn fx:id="colGenres" prefWidth="207.7999267578125" text="Thể loại"/>
+                        <JFXTreeTableColumn fx:id="colDirector" prefWidth="133.5999755859375" text="Đạo diễn"/>
+                        <JFXTreeTableColumn fx:id="colRevenue" prefWidth="148.0" text="Doanh thu"/>
+                        <JFXTreeTableColumn fx:id="colEdit" prefWidth="98.4000244140625"/>
+                    </columns>
+                </JFXTreeTableView>
+            </children>
+        </VBox>
+    </children>
+    <padding>
+        <Insets bottom="30.0" left="30.0" right="30.0" top="30.0"/>
+    </padding>
+</StackPane>

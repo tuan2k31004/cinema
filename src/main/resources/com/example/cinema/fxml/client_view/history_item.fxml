@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefWidth="450.0" spacing="40.0" styleClass="item_history" stylesheets="@../../css/app.css" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.cinema.controller.HistoryItemController">
+    <children>
+        <VBox>
+            <children>
+                <Label fx:id="lbName" prefHeight="18.0" prefWidth="409.0" text="ĐẤU TRƯỜNG SINH TỬ: KHÚC HÁT CỦA CHIM CA VÀ RẮN ĐỘC" wrapText="true">
+                    <font>
+                        <Font name="System Bold" size="12.0" />
+                    </font>
+                </Label>
+                <Label fx:id="lbAuditorium" text="Phòng VIP2" />
+            <Label text="Ghế" fx:id="lbSeat"/>
+                <Label fx:id="lbFood" text="Đồ ăn" wrapText="true" />
+                <Label fx:id="lbTime" text="11/12/2023 21:00">
+                    <font>
+                        <Font size="10.0" />
+                    </font>
+                </Label>
+            </children>
+        </VBox>
+        <AnchorPane>
+            <children>
+                <Label fx:id="lbPrice" text="500,000 đ" AnchorPane.bottomAnchor="0">
+                    <font>
+                        <Font name="System Bold" size="12.0" />
+                    </font>
+                </Label>
+            </children>
+        </AnchorPane>
+    </children>
+    <cursor>
+        <Cursor fx:constant="HAND" />
+    </cursor>
+</HBox>

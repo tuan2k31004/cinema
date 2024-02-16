@@ -1,0 +1,47 @@
+.main_menu_container {
+    -fx-background-color: rgb(51, 51, 51);
+    -fx-alignment: center;
+}
+
+.menu_header Label{
+    -fx-text-fill: #ffffff;
+    -fx-font-size: 18;
+    -fx-font-weight: bold;
+}
+
+.menu_container {
+    -fx-padding: 20 0;
+}
+
+.menu_container JFXButton {
+    -fx-padding: 0 0 0 20;
+    -fx-pref-height: 50;
+    -fx-pref-width: 180;
+    -fx-text-fill: #ffffff;
+    -fx-font-size: 18;
+    -fx-alignment: center_left;
+    -fx-font-weight: bold;
+    -fx-graphic-text-gap: 15;
+    -fx-background-radius: 0;
+    -fx-focus-traversable: false;
+}
+
+
+.menu_container JFXButton FontAwesomeIconView {
+    -fx-font-size: 18;
+    -fx-fill: #ffffff;
+}
+
+.bottom_container {
+    -fx-alignment: center;
+}
+
+.bottom_container Label {
+    -fx-text-fill: #ffffff;
+    -fx-font-size: 18;
+    -fx-graphic-text-gap: 10;
+}
+
+.bottom_container Label FontAwesomeIconView {
+    -fx-fill: #ffffff;
+}

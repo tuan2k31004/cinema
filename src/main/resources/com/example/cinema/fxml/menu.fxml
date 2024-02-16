@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import de.jensd.fx.glyphs.fontawesome.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0"
+      prefWidth="180.0" styleClass="main_menu_container" stylesheets="@../css/menu.css"
+      xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="com.example.cinema.controller.MenuController">
+    <children>
+        <VBox alignment="CENTER" prefHeight="150.0" spacing="20" styleClass="menu_header">
+            <children>
+                <ImageView fitHeight="60.0" fitWidth="60.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="https://cdn-icons-png.flaticon.com/128/1655/1655698.png"/>
+                    </image>
+                </ImageView>
+                <Label fx:id="lbGreet" text="HELLO TUAN" wrapText="true"/>
+            </children>
+        </VBox>
+        <VBox prefHeight="300.0" styleClass="menu_container">
+            <children>
+                <VBox fx:id="menu"/>
+                <Separator prefWidth="200.0"/>
+                <JFXButton fx:id="btnChangePw" text="Đổi mật khẩu">
+                    <graphic>
+                        <FontAwesomeIconView glyphName="KEY"/>
+                    </graphic>
+                </JFXButton>
+            </children>
+        </VBox>
+        <VBox prefHeight="150.0" prefWidth="180.0" styleClass="bottom_container">
+            <children>
+                <Label onMouseClicked="#logout" text="Đăng xuất">
+                    <graphic>
+                        <FontAwesomeIconView glyphName="SIGN_OUT" size="30"/>
+                    </graphic>
+                </Label>
+            </children>
+        </VBox>
+    </children>
+</VBox>

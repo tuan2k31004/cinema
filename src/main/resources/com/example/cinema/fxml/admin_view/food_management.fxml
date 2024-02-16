@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import de.jensd.fx.glyphs.fontawesome.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1000.0" stylesheets="@../../css/app.css" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.cinema.controller.FoodManagementController">
+    <padding>
+        <Insets bottom="20.0" left="30.0" right="30.0" top="20.0" />
+    </padding>
+    <children>
+        <HBox prefHeight="100.0" prefWidth="200.0">
+            <children>
+                <VBox prefHeight="560.0" prefWidth="382.0" spacing="20.0" styleClass="container1">
+                    <children>
+                        <HBox>
+                            <children>
+                                <AnchorPane style="-fx-background-color: #ffffff; -fx-border-color: black; -fx-border-radius: 10;">
+                                    <children>
+                                        <ImageView fx:id="imgThumbnail" fitHeight="150.0" fitWidth="150.0" pickOnBounds="true" />
+                                        <JFXButton mnemonicParsing="false" onMouseClicked="#upload" style="-fx-background-color: blue" text="" AnchorPane.bottomAnchor="10.0" AnchorPane.rightAnchor="-80.0">
+                                            <graphic>
+                                                <FontAwesomeIconView fill="WHITE" glyphName="CLOUD_UPLOAD" size="30" strokeType="OUTSIDE" strokeWidth="0.0" />
+                                            </graphic>
+                                        </JFXButton>
+                                    </children>
+                                </AnchorPane>
+                            </children>
+                        </HBox>
+                        <HBox styleClass="custom_input">
+                            <children>
+                                <Label text="Tên" />
+                                <JFXTextField fx:id="tfName" styleClass="custom_tf" />
+                            </children>
+                        </HBox>
+                        <HBox styleClass="custom_input">
+                            <children>
+                                <Label text="Giá tiền" />
+                                <JFXTextField fx:id="tfPrice" styleClass="custom_tf" />
+                            </children>
+                        </HBox>
+                        <HBox styleClass="custom_input">
+                            <children>
+                                <Label text="Mô tả" />
+                                <JFXTextArea fx:id="taDescription" style="-fx-pref-height: 150;-fx-padding: 10" styleClass="custom_tf" />
+                            </children>
+                        </HBox>
+                        <HBox style="-fx-spacing: 50" styleClass="container2">
+                            <children>
+                                <JFXButton fx:id="btnRemove" mnemonicParsing="false" style="-fx-background-color: red" styleClass="custom_btn" text="Xóa" visible="false" />
+                                <JFXButton fx:id="btnCancel" mnemonicParsing="false" style="-fx-background-color: green" styleClass="custom_btn" text="Hủy" visible="false" />
+                                <JFXButton fx:id="btnSave" mnemonicParsing="false" style="-fx-background-color: blue" styleClass="custom_btn" text="Thêm" />
+                            </children>
+                        </HBox>
+                    </children>
+                </VBox>
+                <Separator orientation="VERTICAL" prefHeight="200.0" />
+                <VBox prefHeight="560.0" prefWidth="557.0">
+                    <padding>
+                        <Insets left="20.0" right="20.0" />
+                    </padding>
+                    <children>
+                        <JFXTreeTableView fx:id="tbFood" prefHeight="566.0" prefWidth="515.0">
+                            <columns>
+                                <JFXTreeTableColumn fx:id="colName" prefWidth="310.9999942779541" text="Tên" />
+                                <JFXTreeTableColumn fx:id="colPrice" prefWidth="198.40005493164062" text="Giá tiền" />
+                            </columns>
+                        </JFXTreeTableView>
+                    </children>
+                </VBox>
+            </children>
+        </HBox>
+    </children>
+</StackPane>
